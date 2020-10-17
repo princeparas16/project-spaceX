@@ -26,8 +26,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 ## Initial setup 
 
-Step 1 - `npm install`  //To get node_modules/Dependencies inside the project.
-Step 2 - `npm run build` //To Initiate React SSR environment.(IMPORTANT)
+### `npm install`  
+To get node_modules/Dependencies inside the project.
+
+### `npm run build` 
+To Initiate React SSR environment.(IMPORTANT)
 
 ### `node start`
 
