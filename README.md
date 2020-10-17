@@ -6,7 +6,7 @@ Welcome to React and Node Project to build a fully-functional SpaceX website.
 
 👉 https://festive-darwin-d8f46f.netlify.app/
 
-## LightHouse Score 
+## LightHouse Score (ScreenShot attached with files)
  
  Performance- 100%, For Mobile- 96%
  Accessibility- 100%
