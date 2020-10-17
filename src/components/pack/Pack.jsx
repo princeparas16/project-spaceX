@@ -5,7 +5,7 @@ function Pack(props) {
   const [info, setInfo] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [year, setYear] = useState("");
-  const [launch, setLaunch] = useState(true);
+  const [launch, setLaunch] = useState("");
   const [land, setLand] = useState("");
 
   // FETCHING DATA FROM PROVIDED API

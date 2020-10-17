@@ -1,12 +1,11 @@
 import React from "react";
 
 const Card = ({ el }) => {
-  let success = "";
-  if (el.rocket.first_stage.cores[0].land_success === true) {
-    success = "true";
-  } else {
-    success = "false";
-  }
+  //LAUNCHING VARIABLE
+  let success1 = el.launch_success === true ? "true" : "false";
+
+  //LANDING VARIABLE
+  let success = el.rocket.first_stage.cores[0].land_success === true ? "true" : "false";
 
   return (
     <div className="max-w-sm m-2 flex-1 rounded shadow-lg bg-white overflow-hidden">
@@ -37,18 +36,21 @@ const Card = ({ el }) => {
               <p className="text-indigo-700">
                 <strong className="text-black">Launch Year:</strong>{" "}
                 {el.launch_year}
+                {/* {console.log("YEAR",el.launch_year)} */}
               </p>
             </li>
             <li className="py-1">
               <p className="text-indigo-700">
                 <strong className="text-black">Successful Launch:</strong>{" "}
-                {el.launch_success.toString()}
+                {success1}
+                {/* {console.log("LAUNCH",el.launch_success.toString())} */}
               </p>
             </li>
             <li className="py-1">
               <p className="text-indigo-700">
                 <strong className="text-black">Successful Landing:</strong>{" "}
                 {success}
+                {/* {console.log("LANDIN",success)} */}
               </p>
             </li>
           </ul>
