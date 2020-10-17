@@ -191,9 +191,13 @@ function Pack(props) {
         <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1>
       ) : (
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:w-100 md:w-4/5 lg:w-4/5 p-2 pr-0 text-center m-2 rounded-lg mt-0 pt-0">
-          {info.map((el) => (
-            <Card key={el.flight_number} el={el} />
-          ))}
+          {info.length === 0 ? (
+            <h1 className="text-6xl text-center mx-auto mt-32">
+              No Record Found
+            </h1>
+          ) : (
+            info.map((el) => <Card key={el.flight_number} el={el} />)
+          )}
         </div>
       )}
     </div>
