@@ -2,13 +2,13 @@
 
 Welcome to React and Node Project to build a fully-functional SpaceX website.
 
-## Demo Website
+## Demo Website (Netlify)
 
 👉 https://festive-darwin-d8f46f.netlify.app/
 
 ## LightHouse Score 
  
- Performance- 96%, For Mobile- 94%
+ Performance- 100%, For Mobile- 96%
  Accessibility- 100%
  Best Practices- 100%
  SEO- 100%
@@ -24,6 +24,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+## Initial setup 
+
+Step 1 - `npm install`  //To get node_modules/Dependencies inside the project.
+Step 2 - `npm run build` //To Initiate React SSR environment.(IMPORTANT)
+
 ### `node start`
 
 Runs the app in the development mode.<br />
@@ -37,7 +42,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `serve -s build`  //For static deployment
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
